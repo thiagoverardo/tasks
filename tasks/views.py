@@ -35,5 +35,6 @@ def post_task(request):
 
 @api_view(["DELETE"])
 def delete_tasks(request):
+    if()
     tasks = Task.objects.all().delete()
     return Response(status=status.HTTP_204_NO_CONTENT)
